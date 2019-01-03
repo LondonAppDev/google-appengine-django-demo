@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  gcloud:
+    image: google/cloud-sdk:latest
+    volumes:
+      - ./creds:/gcloud-config
+      - ./:/app
+    environment:
+      - CLOUDSDK_CONFIG=/gcloud-config
+    working_dir: /app

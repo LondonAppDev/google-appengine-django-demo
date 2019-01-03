@@ -1,0 +1,10 @@
+runtime: python37
+
+handlers:
+  # Map static path
+  - url: /static
+    static_dir: dist/static/
+
+  # Map everything else to app
+  - url: /.*
+    script: auto

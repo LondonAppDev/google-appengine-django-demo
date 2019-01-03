@@ -41,5 +41,5 @@ docker-compose run --rm gcloud gcloud app deploy --project <YOURPROJECT>
 4) Browse (or view URL)
 
 ```
-docker-compose run --rm gcloud gcloud app browse --project londonappdev-test
+docker-compose run --rm gcloud gcloud app browse --project <YOURPROJECT>
 ```
